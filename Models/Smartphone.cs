@@ -1,16 +1,23 @@
+using System;
+
 namespace DesafioPOO.Models
 {
     public abstract class Smartphone
     {
+        // Propriedades
         public string Numero { get; set; }
-        // TODO: Implementar as propriedades faltantes de acordo com o diagrama
+        public string Modelo { get; set; }
+        public string SistemaOperacional { get; set; }
 
-        public Smartphone(string numero)
+        // Construtor
+        public Smartphone(string numero, string modelo, string sistemaOperacional)
         {
             Numero = numero;
-            // TODO: Passar os parâmetros do construtor para as propriedades
+            Modelo = modelo;
+            SistemaOperacional = sistemaOperacional;
         }
 
+        // Métodos
         public void Ligar()
         {
             Console.WriteLine("Ligando...");
